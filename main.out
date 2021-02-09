@@ -18,3 +18,9 @@
 \BOOKMARK [1][-]{section.4}{Adversarial Contest}{}% 18
 \BOOKMARK [2][-]{subsection.4.1}{Static Analysis Mitigations}{section.4}% 19
 \BOOKMARK [2][-]{subsection.4.2}{Dynamic Analysis Mitigations}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Walkthrough}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Ghidra}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{revmem}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Initial Analysis}{subsection.5.2}% 24
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Static Analysis}{subsection.5.2}% 25
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Dynamic Analysis}{subsection.5.2}% 26
