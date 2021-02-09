@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{set} \PYG{n}{disassembly}\PYG{o}{\PYGZhy{}}\PYG{n}{flavor} \PYG{n}{intet} \PYG{err}{\PYGZsh{}}\PYG{n}{sets} \PYG{n}{syntax}
+\PYG{n}{disass} \PYG{o}{*}\PYG{n}{address} \PYG{err}{\PYGZsh{}}\PYG{n}{disassemble}
+\end{Verbatim}

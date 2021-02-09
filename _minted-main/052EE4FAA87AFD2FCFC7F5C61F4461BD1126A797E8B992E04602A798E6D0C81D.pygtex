@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{w} \PYG{o}{*}\PYG{n}{address} \PYG{err}{\PYGZsh{}}\PYG{n}{set} \PYG{n}{watch} \PYG{k}{for} \PYG{n}{write} \PYG{n}{at} \PYG{n}{addr}
+\PYG{n}{rw} \PYG{o}{*}\PYG{n}{address} \PYG{err}{\PYGZsh{}}\PYG{n}{set} \PYG{n}{watch} \PYG{k}{for} \PYG{n}{read} \PYG{n}{at} \PYG{n}{addr}
+\end{Verbatim}

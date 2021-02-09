@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{b} \PYG{o}{*}\PYG{n}{address} \PYG{err}{\PYGZsh{}}\PYG{n}{set} \PYG{n}{software} \PYG{n}{breakp} \PYG{n}{at} \PYG{n}{addr}
+\PYG{n}{hb} \PYG{o}{*}\PYG{n}{address} \PYG{err}{\PYGZsh{}}\PYG{n}{set} \PYG{n}{hardware} \PYG{n}{breakp} \PYG{n}{at} \PYG{n}{addr}
+\PYG{n}{b} \PYG{o}{*}\PYG{n}{address} \PYG{k}{if} \PYG{n}{\PYGZdl{}reg}\PYG{o}{=}\PYG{o}{=}\PYG{n}{val} \PYG{err}{\PYGZsh{}}\PYG{n}{set} \PYG{n}{conditional} \PYG{n}{breakp}
+\PYG{n}{del} \PYG{n}{br\PYGZus{}num} \PYG{err}{\PYGZsh{}}\PYG{n}{remove} \PYG{n}{breakpoint} \PYG{n}{br\PYGZus{}num}
+\end{Verbatim}

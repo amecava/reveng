@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{step} \PYG{p}{(}\PYG{n}{s}\PYG{p}{)} \PYG{err}{\PYGZsh{}}\PYG{n}{exec} \PYG{n}{nextline} \PYG{o}{\PYGZhy{}} \PYG{n}{enter} \PYG{n}{fun}
+\PYG{n}{next} \PYG{p}{(}\PYG{n}{n}\PYG{p}{)} \PYG{err}{\PYGZsh{}}\PYG{n}{exec} \PYG{n}{nectline} \PYG{o}{\PYGZhy{}} \PYG{n}{jump} \PYG{n}{call}
+\PYG{n}{finish} \PYG{p}{(}\PYG{n}{f}\PYG{p}{)} \PYG{err}{\PYGZsh{}}\PYG{n}{exec} \PYG{n}{til} \PYG{n}{ret}
+\PYG{k}{continue} \PYG{p}{(}\PYG{n}{c}\PYG{p}{)} \PYG{err}{\PYGZsh{}}\PYG{k}{continue} \PYG{n}{execution}
+\end{Verbatim}
