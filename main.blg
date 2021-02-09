@@ -8,45 +8,45 @@ Warning--empty author in compil
 Warning--empty journal in compil
 Warning--empty author in elf
 Warning--empty journal in elf
-You've used 7 entries,
+You've used 6 entries,
             1791 wiz_defined-function locations,
-            471 strings with 4003 characters,
-and the built_in function-call counts, 854 in all, are:
-= -- 67
-> -- 23
+            469 strings with 3973 characters,
+and the built_in function-call counts, 776 in all, are:
+= -- 62
+> -- 22
 < -- 0
-+ -- 12
++ -- 11
 - -- 5
-* -- 29
-:= -- 140
-add.period$ -- 17
-call.type$ -- 7
+* -- 27
+:= -- 133
+add.period$ -- 16
+call.type$ -- 6
 change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 54
-empty$ -- 101
+cite$ -- 11
+duplicate$ -- 48
+empty$ -- 87
 format.name$ -- 5
-if$ -- 188
+if$ -- 168
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 6
 missing$ -- 6
-newline$ -- 34
+newline$ -- 31
 num.names$ -- 4
-pop$ -- 33
+pop$ -- 29
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 23
+skip$ -- 19
 stack$ -- 0
 substring$ -- 0
-swap$ -- 3
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
 while$ -- 4
-width$ -- 8
-write$ -- 61
+width$ -- 7
+write$ -- 56
 (There were 5 warnings)

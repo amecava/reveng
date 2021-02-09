@@ -29,7 +29,4 @@ Laune Harris and Barton Miller.
 \newblock Practical analysis of stripped binary code.
 \newblock {\em SIGARCH Computer Architecture News}, 2005.
 
-\bibitem{pwngdb}
-{\em pwngdb GitHub repository}.
-
 \end{thebibliography}

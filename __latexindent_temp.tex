@@ -266,10 +266,10 @@ The GNU Debugger (GDB) is a portable debugger that runs on many Unix-like system
 languages, including Ada, C, C++, Objective-C, Free Pascal, Fortran, Go, and partially others.
 
 Standard GDB is not suitable to use for reverse engineering and exploit development, i.e. it still lacks a hexdump 
-command. \texttt{pwndbg} is a GDB plug-in with a focus on features needed by low-level software developers, hardware 
+command. \texttt{pwndbg}\footnote{\url{https://github.com/pwndbg/pwndbg}} is a GDB plug-in with a focus on features needed by low-level software developers, hardware 
 hackers, reverse engineers and exploit developers. 
 
-A small subset of usefull features are \citep{pwngdb}:
+A small subset of usefull features are:
 \begin{itemize}
 \item{\textbf{Watch Expressions:}} You can add expressions to be watched by the context.
 \item{\textbf{Disassembly:}} \texttt{pwndbg} uses Capstone Engine to display disassembled instructions, but also 
@@ -366,7 +366,48 @@ sending signals to trigger functions instead of calling it.
 \end{itemize}
 
 \pagebreak
-% \section{Walkthrough}    
+% \section{Walkthrough}
+
+% \subsection{Ghidra}
+
+% \subsection{\texttt{revmem}}
+
+% A crackme (often abbreviated by cm[citation needed]) is a small program designed to test a programmer’s 
+% reverse engineering skills.
+
+% The game I will demonstrate dynamic and static analysis on is a simple console application. In the beginning 
+% of each round, a random number is generated. The player enters a guess: depending on the input, the game responds 
+% with an answer that leads the player into the right direction (“number too low/high”). If the player guesses the 
+% wrong number it would allow them to take another guess. If the player guesses the number correctly though, the 
+% game prints the amount of turns it took the player to guess the number and starts anew.
+
+% \subsubsection{Initial Analysis}
+
+% I usually begin reverse-engineering any application with some simple initial analysis: loading the executable 
+% into FileAlyzer provided me with a nice overview of various properties the file has. In the first image you can 
+% see that the file was built for 32bit machines and uses the x86 instruction set. The second image shows the file’s 
+% sections: there were no unusual sections to be seen here. It is noteworthy though that the code and rdata sections 
+% were both only 4kb in size, suggesting a very small and simple application. Lastly, the only imports of the file 
+% that were not MSVC-libraries were functions imported from kernel32 which are used for error handling.
+
+% First thing first: download the binary and try to get a basic idea of what we are dealing with:
+% ./revmem
+% file revmem
+
+% A quick check and we see it appears to be a Linux 64 bits binary, stripped (no symbols/helpful debugging information).
+
+% \subsubsection{Static Analysis}
+
+% Now load Ghidra using ghidraRun, create a project then Import the crackme01 file (press I or drag and drop the 
+% files directly):
+
+% Double click on the file, then, after using default options and enabling Analysis, you will see this workspace below.
+% You can notice that there is nothing listed on the right side for now:
+
+% Now that we are ready to start, let’s hunt for the entry point and see what Ghidra can help us with.
+
+
+% \subsubsection{Dynamic Analysis}
 
 \bibliographystyle{unsrt}
 \bibliography{references}
