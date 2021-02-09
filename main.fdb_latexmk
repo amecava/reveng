@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main"] 1612879438 "main.aux" "main.bbl" "main" 1612879442
+["bibtex main"] 1612881710 "main.aux" "main.bbl" "main" 1612881820
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1612879442 7243 9b4e6ad7c155f2cd7a459f0ac295da53 "pdflatex"
+  "main.aux" 1612881760 7932 872deddb3e2f95bc4f7b7d2a83691bd3 "pdflatex"
   "references.bib" 1612869379 1098 7df0d74beb02a31bf47857c9a459b063 ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1612879439 "/Users/amedeo/GitHub/reveng/main.tex" "main.pdf" "main" 1612879442
-  "/Users/amedeo/GitHub/reveng/main.tex" 1612879434 24925 f057fd0270d9916421181395014d9c10 ""
-  "/dev/null" 1612879386 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.blg"
+["pdflatex"] 1612881756 "/Users/amedeo/GitHub/reveng/main.tex" "main.pdf" "main" 1612881820
+  "/Users/amedeo/GitHub/reveng/main.tex" 1612881819 26442 ce6f6ff16bfd6701953270eb04586dbd ""
+  "/dev/null" 1612881748 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -227,6 +227,9 @@
   "img/ELF_Format.jpg" 1612857452 43558 9cb200b74b66256e36c23f0a0d75f600 ""
   "img/decompiler.jpg" 1612860617 342455 59ba4c3b634f383982623529d1445777 ""
   "img/disassembler.jpg" 1612859063 290298 7780eafa81de4d80563a23559533a1b3 ""
+  "img/gdb_1.jpg" 1612880029 647274 6f88960ac0b71f8636f3d1cf8a631feb ""
+  "img/gdb_2.jpg" 1612880057 430800 097672b90e65258c13929e82fbe8afba ""
+  "img/gdb_3.jpg" 1612880076 680700 7b717e0e0e3ece91fa116214159c93e9 ""
   "img/ghidra_1.jpg" 1612877199 942819 55ee81ae353b966bf5341e5ddabea8fb ""
   "img/ghidra_2.jpg" 1612877460 52128 f0de18047fe22110268b0fde3c8c3e02 ""
   "img/ghidra_3.jpg" 1612877606 108889 d58cb1012afd666ca2a3fbee9a1ce8f4 ""
@@ -234,13 +237,14 @@
   "img/ghidra_5.jpg" 1612878345 233787 9982794a42e85fd1925dc72169e65762 ""
   "img/ghidra_6.jpg" 1612878673 359017 4f4b8e2099412a71702d2a6be6d27258 ""
   "img/initial.jpg" 1612877024 312762 8a5097b2fc4323af71396619a62f4c9b ""
+  "img/ltrace.jpg" 1612880298 178810 7f061faaa0c60532c7a54313fd5d9487 ""
   "img/struct.jpg" 1612861380 450842 ff1c59270bb21eef8c3424442c19772b ""
-  "main.aux" 1612879442 7243 9b4e6ad7c155f2cd7a459f0ac295da53 "pdflatex"
-  "main.bbl" 1612879439 732 d699bdc07dece6c58e916c0d0286668d "bibtex main"
-  "main.out" 1612879442 1660 721b6043b132923fecaa8e02b6bf7aaf "pdflatex"
-  "main.tex" 1612879434 24925 f057fd0270d9916421181395014d9c10 ""
+  "main.aux" 1612881760 7932 872deddb3e2f95bc4f7b7d2a83691bd3 "pdflatex"
+  "main.bbl" 1612881710 732 d699bdc07dece6c58e916c0d0286668d "bibtex main"
+  "main.out" 1612881760 1660 721b6043b132923fecaa8e02b6bf7aaf "pdflatex"
+  "main.tex" 1612881819 26442 ce6f6ff16bfd6701953270eb04586dbd ""
   (generated)
-  "main.out"
-  "main.aux"
   "main.pdf"
   "main.log"
+  "main.aux"
+  "main.out"

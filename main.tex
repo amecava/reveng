@@ -518,6 +518,52 @@ while index < 0x1e:
 
 \subsubsection{Dynamic Analysis}
 
+\begin{enumerate}
+\item{\textbf{GDB:}}
+\noindent\linebreak
+Proceeding to a more intuitive approach I started the binary and attached GDB to it:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{img/gdb_1.jpg}
+\caption{GDB}
+\label{fig:gdb_1}
+\end{figure}
+
+\noindent\linebreak
+GDB can't rely on debug symbols, so we need to use the knowledge acquired with static analysis in order to
+add a breakpoint onto the \texttt{strncmp} call:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{img/gdb_2.jpg}
+\caption{Breakpoint}
+\label{fig:gdb_2}
+\end{figure}
+
+\noindent\linebreak
+Run the code with the \texttt{r} command, and the execution will stop on the added breakpoint. Analyzing the
+stack we immediately recognize the flag. This is due to the x86 base Linux machines function calling convention:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{img/gdb_3.jpg}
+\caption{Stack}
+\label{fig:gdb_3}
+\end{figure}
+
+\item{\textbf{ltrace:}}
+ltrace is a program that simply runs the specified command until it exits.  It intercepts and records the 
+dynamic library calls which are called by the executed process and the signals which are received by that process.
+
+\noindent\linebreak
+ltrace shows parameters of invoked functions and system calls, so we can check the parameters of the 
+\texttt{strncmp} call and capture the flag:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{img/ltrace.jpg}
+\caption{ltrace}
+\label{fig:ltrace}
+\end{figure}
+\end{enumerate}
+
 
 
 
