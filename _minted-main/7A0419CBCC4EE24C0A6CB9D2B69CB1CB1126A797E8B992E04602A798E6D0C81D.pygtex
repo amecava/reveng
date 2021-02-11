@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-\PYG{n}{set} \PYG{n}{\PYGZdl{}reg} \PYG{o}{=} \PYG{n}{val} \PYG{err}{\PYGZsh{}}\PYG{n}{set} \PYG{k}{register} \PYG{n}{to} \PYG{n}{a} \PYG{n}{certain} \PYG{n}{value}
-\end{Verbatim}

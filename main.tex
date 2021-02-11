@@ -423,12 +423,12 @@ First thing first: download the binary and try to get a basic idea of what we ar
 \label{fig:initial}
 \end{figure}
 \noindent\linebreak
-A quick check and we see it appears to be a Linux 64 bits binary, stripped (no symbols/helpful debugging information).
+A quick check and we see it appears to be a Linux 64 bits binary, stripped (no symbols / helpful debugging information).
 
 \subsubsection{Static Analysis}
 
 \noindent\linebreak
-Now load Ghidra using ghidraRun, create a project then Import the revmem file (press I or drag and drop the files 
+Now load Ghidra using ghidraRun, create a project and Import the revmem file (press I or drag and drop the files 
 directly). Double click on the file, then, after using default options and enabling Analysis, you will see this 
 workspace below.
 
@@ -465,8 +465,8 @@ approximate C code, quite easy to read:
 \end{figure}
 
 \noindent\linebreak
-The libc start main function shall initialize the process, call the main function with appropriate 
-arguments, and handle the return from main.
+\textit{"The libc start main function shall initialize the process, call the main function with appropriate 
+arguments, and handle the return from main."}\footnote{\url{https://refspecs.linuxbase.org/LSB_3.0.0/LSB-PDA/LSB-PDA/baselib---libc-start-main-.html}}
 
 \pagebreak
 \noindent\linebreak
@@ -521,7 +521,7 @@ while index < 0x1e:
 \begin{enumerate}
 \item{\textbf{GDB:}}
 \noindent\linebreak
-Proceeding to a more intuitive approach I started the binary and attached GDB to it:
+Proceeding to a more intuitive approach we can start the binary and attach GDB to it:
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{img/gdb_1.jpg}
@@ -541,7 +541,11 @@ add a breakpoint onto the \texttt{strncmp} call:
 
 \noindent\linebreak
 Run the code with the \texttt{r} command, and the execution will stop on the added breakpoint. Analyzing the
-stack we immediately recognize the flag. This is due to the x86 base Linux machines function calling convention:
+stack we immediately recognize the flag. 
+
+\pagebreak 
+This is due to the x86 base Linux machines function calling 
+convention that places the arguments of the function call on the stack:
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{img/gdb_3.jpg}
@@ -555,7 +559,7 @@ dynamic library calls which are called by the executed process and the signals w
 
 \noindent\linebreak
 ltrace shows parameters of invoked functions and system calls, so we can check the parameters of the 
-\texttt{strncmp} call and capture the flag:
+\texttt{strncmp} call and immediately capture the flag:
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{img/ltrace.jpg}
@@ -564,34 +568,7 @@ ltrace shows parameters of invoked functions and system calls, so we can check t
 \end{figure}
 \end{enumerate}
 
-
-
-
-% I usually begin reverse-engineering any application with some simple initial analysis: loading the executable 
-% into FileAlyzer provided me with a nice overview of various properties the file has. In the first image you can 
-% see that the file was built for 32bit machines and uses the x86 instruction set. The second image shows the file’s 
-% sections: there were no unusual sections to be seen here. It is noteworthy though that the code and rdata sections 
-% were both only 4kb in size, suggesting a very small and simple application. Lastly, the only imports of the file 
-% that were not MSVC-libraries were functions imported from kernel32 which are used for error handling.
-
-% First thing first: download the binary and try to get a basic idea of what we are dealing with:
-% ./revmem
-% file revmem
-
-% A quick check and we see it appears to be a Linux 64 bits binary, stripped (no symbols/helpful debugging information).
-
-% \subsubsection{Static Analysis}
-
-% Now load Ghidra using ghidraRun, create a project then Import the crackme01 file (press I or drag and drop the 
-% files directly):
-
-% Double click on the file, then, after using default options and enabling Analysis, you will see this workspace below.
-% You can notice that there is nothing listed on the right side for now:
-
-% Now that we are ready to start, let’s hunt for the entry point and see what Ghidra can help us with.
-
-
-% \subsubsection{Dynamic Analysis}
+\pagebreak
 
 \bibliographystyle{unsrt}
 \bibliography{references}
